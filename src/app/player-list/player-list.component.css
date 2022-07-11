@@ -1,0 +1,22 @@
+.num {
+    font-size: 10px;
+    border: solid lightgray 1px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.player-list {
+    grid-column: 1 / 1;
+    grid-row: 1 / 10;
+    text-align: center;
+}
+
+.match-list {
+    grid-column: 2 / 100;
+    grid-row: 1 / 10;
+}

@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="player-list">
+        <div class="num">{{ playersForm.value.length }}</div>
+        <div>
+            <mat-button-toggle-group vertical #playersForm="matButtonToggleGroup" aria-label="Players" multiple>
+                <mat-button-toggle #matbuttontoggleA="matButtonToggle" (click)="onClick(player.id, matbuttontoggleA.checked)" *ngFor="let player of playerList" value="{{player.id}}">{{player.firstName}} {{player.lastName}}</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+    <div class="match-list">
+        <app-match-list></app-match-list>
+    </div>
+</div>
