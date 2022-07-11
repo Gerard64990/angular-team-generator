@@ -1,0 +1,85 @@
+/* Application-wide Styles */
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2,
+h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+body,
+input[type="text"],
+button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+ul.players {
+    list-style-type: none;
+    padding: 0.4em;
+    margin: 0px;
+}
+
+.mat-button-toggle,
+.mat-button-toggle-group {
+    margin: -0.1em;
+    padding: -0em;
+    font-size: 0.9em;
+    border-radius: 0.1em;
+}
+
+
+/* everywhere else */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-button-toggle-label-content {
+    padding: 0px 10px !important;
+    line-height: 30px !important;
+}
