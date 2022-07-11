@@ -1,0 +1,123 @@
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.player-list {
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+    font: bold 12px/24px Helvetica, Sans-Serif;
+}
+
+.player-box {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: move;
+    color: white;
+}
+
+#res1 {
+    left: 420px;
+}
+
+#res2 {
+    top: 230px;
+}
+
+#res3 {
+    left: 420px;
+    top: 230px;
+}
+
+#res4 {
+    top: 460px;
+}
+
+#res5 {
+    top: 460px;
+    left: 420px;
+}
+
+.image {
+    position: absolute;
+    top: 0px;
+}
+
+.container {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.global {
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.Stats {
+    position: absolute;
+    width: 200px;
+    height: 102px;
+    top: 101px;
+    left: 110px;
+}
+
+.r1 {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+.r2 {
+    position: absolute;
+    top: 55px;
+    left: 120px;
+}
+
+.SPI {
+    position: relative;
+    top: 4px;
+}
+
+.STA {
+    position: relative;
+    top: 4px;
+}
+
+.team_list {
+    position: absolute;
+    top: 85px;
+    width: 100px;
+    height: 135px;
+    text-align: center;
+    left: 5px;
+}
+
+#team1_team_list {}
+
+#team2_team_list {
+    left: 310px;
+}
+
+.total {
+    position: absolute;
+    top: 74px;
+    width: 80px;
+    height: 15px;
+    text-align: start;
+    left: 97px;
+}
+
+#team1_total {}
+
+#team2_total {
+    left: 245px;
+}

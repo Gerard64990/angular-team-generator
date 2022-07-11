@@ -1,0 +1,33 @@
+<p>
+    <button mat-stroked-button (click)="generateMatchList()" [disabled]="selectedPlayerList.length < 8">Generate</button>
+</p>
+
+<div class="container" *ngIf="matchList.length > 0">
+    <div id="res{{i}}" class="image" *ngFor="let match of matchList; let i = index">
+        <img [src]="imgPath" alt="" />
+        <div class="top-left">{{i+1}}</div>
+        <div class="Stats">
+            <div class="global">Ecart global: {{ match.getTotalDiff() }}</div>
+            <div class="r1">
+                <div class="ATT">ATT: {{ match.getAttDiff() }}</div>
+                <div class="STA">STA: {{ match.getDefDiff() }}</div>
+            </div>
+            <div class="r2">
+                <div class="DEF">DEF: {{ match.getDefDiff() }}</div>
+                <div class="SPI">SPI: {{ match.getDefDiff() }}</div>
+            </div>
+        </div>
+        <div id="team1_total" class="total">TOTAL : {{ match.team1.getLevel() }}</div>
+        <div id="team1_team_list" class="team_list">
+            <div cdkDropList #team1="cdkDropList" [cdkDropListData]="match.team1.players" [cdkDropListConnectedTo]="[team2]" class="player-list" (cdkDropListDropped)="drop($event)">
+                <div class="player-box" *ngFor="let player of match.team1.players" cdkDrag>{{player.firstName}} {{player.lastName[0]}}.</div>
+            </div>
+        </div>
+        <div id="team2_total" class="total">TOTAL : {{ match.team2.getLevel() }}</div>
+        <div id="team2_team_list" class="team_list">
+            <div cdkDropList #team2="cdkDropList" [cdkDropListData]="match.team2.players" [cdkDropListConnectedTo]="[team1]" class="player-list" (cdkDropListDropped)="drop($event)">
+                <div class="player-box" *ngFor="let player of match.team2.players" cdkDrag>{{player.firstName}} {{player.lastName[0]}}.</div>
+            </div>
+        </div>
+    </div>
+</div>
