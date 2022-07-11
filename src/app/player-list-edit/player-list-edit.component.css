@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+.form-input {
+    padding-right: 5px;
+}
