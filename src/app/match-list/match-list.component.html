@@ -10,11 +10,11 @@
             <div class="global">Ecart global: {{ match.getTotalDiff() }}</div>
             <div class="r1">
                 <div class="ATT">ATT: {{ match.getAttDiff() }}</div>
-                <div class="STA">STA: {{ match.getDefDiff() }}</div>
+                <div class="STA">STA: {{ match.getStaDiff() }}</div>
             </div>
             <div class="r2">
                 <div class="DEF">DEF: {{ match.getDefDiff() }}</div>
-                <div class="SPI">SPI: {{ match.getDefDiff() }}</div>
+                <div class="SPI">SPI: {{ match.getSpiDiff() }}</div>
             </div>
         </div>
         <div id="team1_total" class="total">TOTAL : {{ match.team1.getLevel() }}</div>
